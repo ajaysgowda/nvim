@@ -13,10 +13,10 @@ fun! PyIndent()
     setlocal shiftwidth=4 softtabstop=4 expandtab tabstop=2
 endfun
 
-function! s:check_back_space() abort
+fun! CheckBackSpace() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+endfun
 
 
 fun! TrimWhitespace()

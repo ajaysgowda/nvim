@@ -17,8 +17,8 @@ let plugged_path = '~/AppData/Local/nvim/plugged'
 
 
 source ~/AppData/Local/nvim/plugins.vim
-source ~/AppData/Local/nvim/default-setting.vim
 source ~/AppData/Local/nvim/functions.vim
+source ~/AppData/Local/nvim/default-setting.vim
 source ~/AppData/Local/nvim/coc-maps.vim
 source ~/AppData/Local/nvim/key-mappings.vim
 

@@ -9,7 +9,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Emmet
@@ -25,6 +24,9 @@ Plug 'junegunn/fzf.vim'
 
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install() }}
+
+" markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
 
 call plug#end()
 

@@ -25,8 +25,14 @@ nnoremap <C-p> :GFiles<CR>
 " Tab scroll
 inoremap <silent><expr> <Tab>
             \ pumvisible() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<Tab>" :
+            \ CheckBackSpace() ? "\<TAB>" :
             \ coc#refresh()
 
 "emmet
 imap <S-tab> <plug>(emmet-expand-abbr)
+
+
+"markdown
+nmap <leader>P <Plug>MarkdownPreview
+nmap <leader>S <Plug>MarkdownPreviewStop
+nmap <leader>T <Plug>MarkdownPreviewToggleu
