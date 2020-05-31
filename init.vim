@@ -53,6 +53,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
+" Emmet
+Plug 'mattn/emmet-vim'
 "plantuml
 Plug 'aklt/plantuml-syntax'
 Plug 'tyru/open-browser.vim'
@@ -84,6 +86,9 @@ let g:ctrlp_use_caching = 0
 " editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
+"emmet
+"let g:user_emmet_leader_key='<S-Tab>'
+imap <S-tab> <plug>(emmet-expand-abbr)
 
 source ~/.config/nvim/coc-maps.vim
 source ~/.config/nvim/key-mappings.vim
