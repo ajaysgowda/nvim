@@ -5,7 +5,7 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 
 "coc intelesense
 let g:coc_global_extensions = [
-            \'coc-emoji', 'coc-eslint', 'coc-prettier',
+            \'coc-emoji', 'coc-prettier',
             \'coc-tsserver', 'coc-tslint', 'coc-tslint-plugin',
             \'coc-css', 'coc-json', 'coc-yaml', 'coc-python',
             \'coc-angular', 'coc-html', 'coc-emmet',
