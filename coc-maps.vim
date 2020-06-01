@@ -45,5 +45,9 @@ function! s:show_documentation()
     endif
 endfunction
 
+fun! PyMap()
+    nmap <leader>r :CocCommand python.execInTerminal<CR>
+endfun
+
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')

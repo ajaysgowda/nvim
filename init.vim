@@ -17,4 +17,5 @@ source ~/.config/nvim/key-mappings.vim
 
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType typescript,yaml,json,html :call TsIndent()
-autocmd FileType python,cpp,cxx,h,hpp,c :call PyIndent(
+autocmd FileType python,cpp,cxx,h,hpp,c :call PyIndent()
+autocmd FileType python :call PyMap()
