@@ -32,7 +32,3 @@ inoremap <silent><expr> <Tab>
 imap <S-tab> <plug>(emmet-expand-abbr)
 
 
-"markdown
-nmap <leader>P <Plug>MarkdownPreview
-nmap <leader>S <Plug>MarkdownPreviewStop
-nmap <leader>T <Plug>MarkdownPreviewToggleu

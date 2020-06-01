@@ -5,7 +5,6 @@ Plug 'morhetz/gruvbox'
 " git plugin
 Plug 'tpope/vim-fugitive'
 " typescript lint
-"Plug 'leafgarland/typescript-vim'
 Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'

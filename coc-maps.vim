@@ -46,7 +46,7 @@ function! s:show_documentation()
 endfunction
 
 fun! PyMap()
-    nmap <leader>r :CocCommand python.execInTerminal<CR>
+    nmap <F5> :CocCommand python.execInTerminal<CR>
 endfun
 
 " Highlight symbol under cursor on CursorHold

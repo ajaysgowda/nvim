@@ -24,3 +24,10 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+fun! MardownMaps()
+    "markdown
+    nmap <leader>P <Plug>MarkdownPreview
+    nmap <leader>S <Plug>MarkdownPreviewStop
+    nmap <leader>T <Plug>MarkdownPreviewToggle
+endfun

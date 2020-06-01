@@ -8,7 +8,15 @@
     "v": "open:vsplit"
   },
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=numpy",
+        "--disable", "C0103"
+    ]
 }
+
+
 
 
