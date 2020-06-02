@@ -51,3 +51,4 @@ endfun
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env']
