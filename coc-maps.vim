@@ -6,7 +6,7 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 "coc intelesense
 let g:coc_global_extensions = [
             \'coc-emoji', 'coc-prettier',
-            \'coc-tsserver', 'coc-tslint', 'coc-tslint-plugin',
+            \'coc-tsserver', 'coc-eslint',
             \'coc-css', 'coc-json', 'coc-yaml', 'coc-python',
             \'coc-angular', 'coc-html', 'coc-emmet',
             \ 'coc-explorer', 'coc-git'
@@ -36,6 +36,9 @@ nmap <leader>gr <Plug>(coc-rename)
 
 " Use K for show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" Map esc to exit terminal mode
+:tnoremap <Esc> <C-\><C-n>
 
 function! s:show_documentation()
     if &filetype == 'vim'

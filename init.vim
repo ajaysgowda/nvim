@@ -20,3 +20,4 @@ autocmd FileType typescript,yaml,json,html :call TsIndent()
 autocmd FileType python,cpp,cxx,h,hpp,c :call PyIndent()
 autocmd FileType python :call PyMap()
 autocmd FileType markdown :call MardownMaps()
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env']

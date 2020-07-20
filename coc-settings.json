@@ -12,8 +12,8 @@
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": true,
   "python.linting.pylintArgs": [
-        "--extension-pkg-whitelist=numpy",
-        "--disable", "C0103"
+        "--extension-pkg-whitelist=numpy,torch",
+        "--disable=C0103,not-callable,E1101,import-error"
     ]
 }
 
