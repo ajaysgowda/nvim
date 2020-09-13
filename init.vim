@@ -1,6 +1,6 @@
 " python path
 let g:python3_host_prog = "/home/ajaysgowda/.pyenv/versions/neovim3/bin/python"
-let plugged_path = '~/.config/nvim/plugged'
+let plugged_path = '~/.local/share/nvim/plugged'
 
 if empty(glob(plugged_path ))
 
