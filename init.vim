@@ -1,30 +1,14 @@
-" python path
-let g:python3_host_prog = "/home/ajaysgowda/.pyenv/versions/neovim3/bin/python"
-let plugged_path = '~/AppData/Local/nvim/plugged'
+let g:python_host_prog = "~/.config/nvim/venv/bin/python"
+let g:python3_host_prog = "~/.config/nvim/venv/bin/python3"
+let plugged_path = '~/.local/share/nvim/plugged'
 
-
-"if (!(Test-Path ~/AppData/Local/nvim/plugged))
-"	echo installing
-"	md ~\AppData\Local\nvim\autoload
-"	$uri = 'ht(New-Object Net.WebClient).DownloadFile(
-"	  $uri,
-"	  $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
-""~\AppData\Local\nvim\autoload\plug.vim"
-"	  )
-"	)tps://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-"
-"endif
-
-
-source ~/AppData/Local/nvim/plugins.vim
-source ~/AppData/Local/nvim/functions.vim
-source ~/AppData/Local/nvim/default-setting.vim
-source ~/AppData/Local/nvim/coc-maps.vim
-source ~/AppData/Local/nvim/key-mappings.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/default-settings.vim
+source ~/.config/nvim/functions.vim
+source ~/.config/nvim/key-maps.vim
 
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType typescript,yaml,json,html :call TsIndent()
 autocmd FileType python,cpp,cxx,h,hpp,c :call PyIndent()
-autocmd FileType python let b:coc_root_patterns = ['.git', '.env']
-autocmd FileType typescript,yaml,json,html let b:coc_root_patterns = ['.git']
+autocmd FileType python :call PyMap()
 
