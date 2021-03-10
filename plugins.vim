@@ -15,7 +15,5 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'vimwiki/vimwiki'
 
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
-
 call plug#end()
 
